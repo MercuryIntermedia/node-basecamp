@@ -31,6 +31,18 @@ module.exports = function(req, res) {
 }
 ```
 
+or if you'd like to use oauth, you can pass in the oauth token as the `YOUR_API_KEY` and then supply `true` to 
+the third parameter like so
+```js
+	
+var bc = new Basecamp(
+  'https://YOUR_COMPANY.basecamphq.com',
+  'YOUR_OAUTH_TOKEN',
+  true
+);
+	
+```
+
 ## Supported methods
 
 ### projects
